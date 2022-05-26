@@ -67,6 +67,7 @@ function handleSubmit(e){
             <button type='submit' className='btn btn-dark btn-block mx-2 my-2'>Register Me!</button>
             <br></br>
             <p>Already have an account? {" "}<span className='text-info' onClick={handleClick}>Log in</span> </p>
+            <br></br>
             {flag && (
                 <Alert color="primary" variant='danger'>
                     Please fill fields properly

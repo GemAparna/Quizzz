@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Alert } from 'react-bootstrap';
 import Home from './Home'
 import Next from './Next'
-
+// import styles from './Login.module.css';
 
 function Login() {
 
@@ -33,7 +33,7 @@ function Login() {
   }
 
   return (
-    <div>
+    <div >
       {home ? (
       <form onSubmit={handleLogin}>
 
@@ -56,9 +56,11 @@ function Login() {
                 ></input>
             </div>
 
-            <button type='submit' className='btn btn-dark btn-lg btn-block'>
+            <button type='submit' className='btn btn-dark btn-lg btn-block mx-2 my-2'>
               Login
             </button>
+            <br></br>
+              <br></br>
 
             {flag && (
               <Alert color='primary' variant='warning'>

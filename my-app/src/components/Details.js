@@ -69,9 +69,6 @@ const Details = ({ details, setDetails, crr_option, setCrr_option }) => {
                     </form>
                     <button className='btn btn-create'><Link className="Link" to="/mcq">Create</Link></button>
                 </div>
-                <div className="d-left">
-                    Make your MCQ QUESTIONS on a GO!
-                </div>
             </div>
         </>
     )

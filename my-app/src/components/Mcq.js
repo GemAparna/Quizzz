@@ -54,7 +54,7 @@ const Mcq = ({ details, crr_option }) => {
 
   return (
     <>
-      <h1>Your MCQ questions! (You can submit only once)</h1>
+      <h2>Your MCQ questions! (You can submit only once)</h2>
       {details.map((q) => {
         const { counter, question, option1, option2, option3, option4 } = q;
         return (
@@ -85,6 +85,7 @@ const Mcq = ({ details, crr_option }) => {
       <div className="btn-cont">
         <button className="btn btn-submit" onClick={handelSubmit}>Submit</button>
       </div>
+      <br></br>
       {answered &&
         <div ref={resultBox} className="result-box">
           {
@@ -96,7 +97,7 @@ const Mcq = ({ details, crr_option }) => {
               )
             })
           }
-          <h2 className={(percent > 80 ? "green" : percent < 50 && percent >= 40 ? "yellow" : percent < 40 ? "red" : "orange")}>Total percent scored: {percent} %</h2>
+          <h3 className={(percent > 80 ? "green" : percent < 50 && percent >= 40 ? "yellow" : percent < 40 ? "red" : "orange")}>Total percent scored: {percent} %</h3>
         </div>
       }
     </>

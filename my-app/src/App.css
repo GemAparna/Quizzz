@@ -52,25 +52,6 @@ label {
   justify-content: space-around;
 }
 
-.d-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  padding: 37px;
-  height: 59vh;
-  width: 30%;
-  margin: 9px;
-  background-color: #0000b8;
-  box-shadow: 2px 2px 9px grey;
-  font-size: 4rem;
-}
-.d-left:hover {
-  background-color: black;
-  color: white;
-  transition: 0.3s ease-out;
-  transform: scale(1.0122);
-}
 
 .toggle_cont {
   display: flex;
