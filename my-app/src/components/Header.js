@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from "./Header.module.css"
 
 const Header = () => {
     return (
-        <div className="header">
-            <h1>Quiz Builder App</h1>
+        <div className={styles.header}>
+            <h1>Quizzizz</h1>
         </div>
     )
 }

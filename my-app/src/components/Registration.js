@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Form,Alert } from 'react-bootstrap';
 import Login  from './Login'
-
+import styles from './Registration.module.css';
+import Header from './Header';
 function Registration() {
 
     const [ name , setName] = useState("");
@@ -31,12 +32,15 @@ function handleSubmit(e){
 
 
   return (
-    <div>
+      <div>
+          <Header/>
+    <div className={styles.all}>
+        <br></br>
         {" "}
           {logIn ? (
         <form onSubmit={handleSubmit}>
-            <h1>User Registration</h1>
-            <div className='form-group p-2'>
+            <h1 className='hii mx-2 my-2'>User Registration</h1>
+            <div className='form-group p-2 mx-2 my-2'>
                 <label>Name</label>
                 <input type="text"
                 className='form-control '
@@ -44,7 +48,7 @@ function handleSubmit(e){
                 onChange={(event) => setName(event.target.value)}
                 ></input>
             </div>
-            <div className='form-group p-2'>
+            <div className='form-group p-2 mx-2 my-2'>
                 <label>Email:</label>
                 <input type="text"
                 className='form-control '
@@ -52,7 +56,7 @@ function handleSubmit(e){
                 onChange={(event) => setEmail(event.target.value)}
                 ></input>
             </div>
-            <div className='form-group p-2'>
+            <div className='form-group p-2 mx-2 my-2'>
                 <label>Password</label>
                 <input type="password"
                 className='form-control '
@@ -60,9 +64,9 @@ function handleSubmit(e){
                 onChange={(event) => setPassword(event.target.value)}
                 ></input>
             </div>
-            <button type='submit' className='btn btn-dark btn-block'>Register Me!</button>
+            <button type='submit' className='btn btn-dark btn-block mx-2 my-2'>Register Me!</button>
+            <br></br>
             <p>Already have an account? {" "}<span className='text-info' onClick={handleClick}>Log in</span> </p>
-
             {flag && (
                 <Alert color="primary" variant='danger'>
                     Please fill fields properly
@@ -76,6 +80,7 @@ function handleSubmit(e){
                 <Login></Login>
                 )}
 
+    </div>
     </div>
   );
 }

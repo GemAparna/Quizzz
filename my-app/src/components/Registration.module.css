@@ -1,0 +1,22 @@
+.all{
+    font-family: 'Cookie', cursive;
+    margin:auto;
+    margin-top: 90px;
+    /* position: absolute;
+    top:50%; */
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #140a50 0%, #443895 100%);
+    color:aliceblue;
+    /* text-align: center; */
+    box-shadow: 7px 7px 7px rgb(163, 159, 159);
+}
+.all h1{
+    text-align: center;
+}
+body{
+    background: linear-gradient(90deg, #a6a9a6 0%, white 100%);
+}

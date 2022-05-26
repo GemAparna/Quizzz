@@ -1,0 +1,22 @@
+.detailscont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  .details {
+    background-color: #03574f;
+    color: white;
+    border-radius: 12px;
+    min-height: 47vh;
+    padding: 1.2rem;
+    margin: 2rem;
+    min-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px #2b00d0;
+  }

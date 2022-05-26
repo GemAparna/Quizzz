@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Next from './Next';
-
+import styles from "./Details.module.css"
 
 const Details = ({ details, setDetails, crr_option, setCrr_option }) => {
     const [counter, setCounter] = useState(1)
@@ -39,8 +39,8 @@ const Details = ({ details, setDetails, crr_option, setCrr_option }) => {
 
     return (
         <>
-            <div className="details-cont">
-                <div className="details">
+            <div className={styles.detailscont}>
+                <div className={styles.details}>
                     <form onSubmit={handelSubmit}>
                         <div className="input_cont">
                             <label htmlFor="question">Question: {counter}</label>
