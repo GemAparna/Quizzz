@@ -60,8 +60,6 @@ function Login() {
               Login
             </button>
             <br></br>
-              <br></br>
-
             {flag && (
               <Alert color='primary' variant='warning'>
                 Fill the fields properly
@@ -71,6 +69,7 @@ function Login() {
                ) : (
                 <Next></Next>
                 )}
+                <br></br>
     </div>
   );
 }
