@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Next from './Next'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Next from './Next';
 
 
 const Details = ({ details, setDetails, crr_option, setCrr_option }) => {
