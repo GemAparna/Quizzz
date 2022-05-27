@@ -29,6 +29,10 @@ function handleSubmit(e){
     function handleClick(){
         setLogin(!logIn);
     }
+    const handle = () => {
+        localStorage.setItem('Name', name);
+        localStorage.setItem('Password', password);
+     };
 
 
   return (
@@ -64,7 +68,7 @@ function handleSubmit(e){
                 onChange={(event) => setPassword(event.target.value)}
                 ></input>
             </div>
-            <button type='submit' className='btn btn-dark btn-block mx-2 my-2'>Register Me!</button>
+            <button type='submit' className='btn btn-dark btn-block mx-2 my-2'  onClick={handle}>Register Me!</button>
             <br></br>
             <p>Already have an account? {" "}<span className='text-info' onClick={handleClick}>Log in</span> </p>
             <br></br>
