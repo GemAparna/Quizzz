@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 
 
+
 const Mcq = ({ details, crr_option }) => {
   let res = [];
   let list = [];
@@ -54,6 +55,7 @@ const Mcq = ({ details, crr_option }) => {
 
   return (
     <>
+ 
       <h2>Your MCQ questions! (You can submit only once)</h2>
       {details.map((q) => {
         const { counter, question, option1, option2, option3, option4 } = q;
