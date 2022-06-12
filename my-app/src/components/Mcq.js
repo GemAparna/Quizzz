@@ -1,7 +1,4 @@
 import React, { useState, useRef } from "react";
-
-
-
 const Mcq = ({ details, crr_option }) => {
   let res = [];
   let list = [];
